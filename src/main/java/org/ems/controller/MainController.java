@@ -1,4 +1,4 @@
-package org.aais.controller;
+package org.ems.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

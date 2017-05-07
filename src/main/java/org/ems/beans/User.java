@@ -1,4 +1,4 @@
-package org.aais.beans;
+package org.ems.beans;
 
 
 public class User {
