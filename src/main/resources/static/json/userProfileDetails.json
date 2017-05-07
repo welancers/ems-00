@@ -1,0 +1,15 @@
+{   
+"empList" : [
+    {
+        "id": 1,
+        "firstName": "Rajeev",
+        "lastName": "Prabhakar",
+        "landlineNum":"1234567890",
+        "mobileNum":"1234567890",
+        "gender":{"id": 2,"value": "male" },
+        "email": "mailid@domain.com",
+        "employed": true,
+        "date": "2015-10-10"
+    }
+]
+}

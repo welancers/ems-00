@@ -1,0 +1,104 @@
+body.basecolor {
+	background-color: #F2F2F2;
+	font-family: Segoe UI;
+	font-weight: 150;
+}
+
+div.container {
+	width: 90%;
+	margin: 0 auto;
+	background-color: #ffffff;
+}
+
+header, footer {
+	padding: 1em;
+	color: white;
+	background-color: #f2a560;
+	clear: left;
+	text-align: center;
+}
+
+nav {
+	float: left;
+	width: 20%;
+}
+
+nav ul {
+	list-style-type: none;
+	margin-top: 30px;
+	padding-top: 30px;
+}
+
+nav ul a {
+	text-decoration: none;
+	color: #7aa7ef;
+}
+
+li {
+	padding: 5px;
+}
+
+td {
+	padding: 6px;
+	font-size: 12px;
+	min-width: 16px;
+	text-align: center;
+}
+
+td.publicholiday {
+	color: #ffffff;
+	background-color: #4CAF50;
+}
+
+td.schoolholiday {
+	color: #ffffff;
+	background-color: #4CAFD1
+}
+
+span.pubholidaysquare {
+	height: 15px;
+	background-color: #4CAF50;
+	display: block;
+}
+span.schholidaysquare {
+	height: 15px;
+	background-color: #4CAFD1;
+	display: block;
+}
+
+div.fluidfloat {
+	margin-left: 170px;
+	padding: 1em;
+	overflow: hidden;
+	border-left: 2px solid #F2F2F2;
+}
+
+h1 {
+	font-weight: 100;
+}
+
+table {
+	border-collapse: collapse;
+	display: inline-block;
+}
+
+div.centerdiv {
+	text-align: center;
+}
+
+div.headerright {
+	float: left;
+	width: 20%;
+	diplay: flex;
+}
+
+img.logo {
+	height: 75px;
+}
+
+.userFormInput {
+    width: 146%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding:6px;
+}

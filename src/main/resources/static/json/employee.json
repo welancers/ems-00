@@ -1,0 +1,86 @@
+{
+"nameList" : [
+        "Janir",
+        "Carlr",
+        "Margareth",
+        "Heger",
+        "Joe",
+        "Gustavi",
+        "Birgit",
+        "Maryit",
+        "Kai2",
+        "rntbci"
+    ],
+"details" : [
+        {"name":"Jani","country":"Norway"},
+        {"name":"Carl","country":"Sweden"},
+        {"name":"Margareth","country":"England"},
+        {"name":"Hege","country":"Norway"},
+        {"name":"Joe","country":"Denmark"},
+        {"name":"Gustav","country":"Sweden"},
+        {"name":"Birgit","country":"Denmark"},
+        {"name":"Mary","country":"England"},
+        {"name":"Kai","country":"Norway"}
+        ],   
+"empList" : [
+    {
+        "id": 1,
+        "firstName": "Rajeev",
+        "lastName": "Prabhakar",
+        "gender":{"id": 2,"value": "male" },
+        "email": "abc@123.com",
+        "employed": true,
+        "date": "2015-10-10"
+    },
+    {
+        "id": 2,
+        "firstName": "Test1",
+        "lastName": "Test1a",
+       "gender":{"id": 3,"value": "both" },
+       "email": "abc@123.com",      
+        "employed": true
+    },
+    {
+        "id": 3,
+        "firstName": "Test2",
+        "lastName": "Test2a",
+       "gender":{"id": 1,"value": "female" },
+       "email": "abc@123.com",
+        "employed": false,
+        "date": "2015-10-10"
+    },
+    {
+        "id": 4,
+        "firstName": "Test3",
+        "lastName": "Test3a",
+        "gender":{"id": 2,"value": "male" },
+        "email": "abc@123.com",
+        "employed": false,
+        "date": "2015-10-10"
+    },
+    {
+        "id": 5,
+        "firstName": "Test4",
+        "lastName": "Test4a",
+        "gender": {"id":3, "value": "female"},
+        "email": "abc@123.com",
+        "employed": false,
+        "date": "2015-10-10"
+    },
+    {
+        "id": 6,
+        "firstName": "Test5",
+        "lastName": "Test5a",
+       "gender":{"id": 1,"value": "female" },
+       "email": "abc@123.com",
+        "employed": false
+    },
+    {
+        "id": 7,
+        "firstName": "Test6",
+        "lastName": "Test6a",
+        "gender":{"id": 2,"value": "male" },
+        "email": "abc@123.com",
+        "employed": true
+    }]
+}

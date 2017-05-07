@@ -1,0 +1,21 @@
+.menu-list{
+    padding-left: 30px;
+    padding-top: 20px;
+    width: 150px;
+}
+.home-section{
+	position: absolute;
+    float:left;
+    width: 30%;
+}
+.section{	
+    margin-left: 20%;
+    float:left;
+    width: 75%;
+}
+.photo{
+    padding-right: 5px;
+}
+.pageCLick {
+	background-color: lime;
+}
