@@ -10,6 +10,7 @@ private String otherContactNum;
 private String personalEmail;
 private String officeEmail;
 private String residentialAddr;
+private String userType;
 
 public String getMobileNum() {
 	return MobileNum;
