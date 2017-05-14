@@ -22,6 +22,7 @@ import javax.persistence.TemporalType;
  */
 @Entity
 @Table(name="groupaccess"
+    ,catalog="ems"
 )
 
 public class Groupaccess

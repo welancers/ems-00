@@ -12,6 +12,10 @@ app.config(function($routeProvider){
             templateUrl: '/views/userprofile.html',
             controller: 'testProfileController'
         })
+        .when('/applyLeave',{
+            templateUrl: '/views/applyLeave.html',
+            controller: 'leaveApplyController'
+        })
         .otherwise(
             { redirectTo: '/'}
         );

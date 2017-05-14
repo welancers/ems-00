@@ -18,7 +18,7 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name="organization"
-    ,catalog="leave_app"
+    ,catalog="ems"
 )
 
 public class Organization

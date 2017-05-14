@@ -21,6 +21,7 @@ header, footer {
 nav {
 	float: left;
 	width: 20%;
+	border-right: 2px solid #F2F2F2;
 }
 
 nav ul {
@@ -70,7 +71,7 @@ div.fluidfloat {
 	margin-left: 170px;
 	padding: 1em;
 	overflow: hidden;
-	border-left: 2px solid #F2F2F2;
+	margin-bottom:15%;
 }
 
 h1 {
@@ -102,3 +103,31 @@ img.logo {
     border-radius: 4px;
     padding:6px;
 }
+.userFormInput1 {
+    width: 105%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding:6px;
+}
+
+.calenderField{
+	width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding:6px;
+    display:inline-block;
+}
+
+.buttonType{
+	width:90%;
+	
+}
+.muted{
+	background-color:#F2F2F2
+}
+
+.sameLine{
+	display: inline-block;
+	width: 100px;
+}
+

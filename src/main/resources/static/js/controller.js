@@ -25,3 +25,23 @@ app.controller('testProfileController', ['$scope', '$http', '$log',
          })
      
 }]);
+
+app.controller('leaveApplyController', ['$scope', '$http', '$log',
+    function($scope, $http, $log) {
+	$scope.submit_form = function(){
+		$http({
+	        url: "/userProfile/applyLeave",
+	        method: "POST",
+	        headers: {'Content-Type': 'application/json'},
+	        data: $scope.formAdata
+	    }).success(function(data, status, headers, config) {
+	        $scope.status = status;
+	        console.log(status)
+	    }).error(function(data, status, headers, config) {
+	        $scope.status = status;
+	    });
+	}
+	
+	
+	
+}]);

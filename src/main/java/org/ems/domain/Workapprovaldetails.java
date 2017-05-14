@@ -22,7 +22,7 @@ import javax.persistence.TemporalType;
  */
 @Entity
 @Table(name="workapprovaldetails"
-    ,catalog="leave_app"
+    ,catalog="ems"
 )
 
 public class Workapprovaldetails

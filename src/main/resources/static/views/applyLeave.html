@@ -1,0 +1,56 @@
+<div>
+	<form class="form-horizontal" role="form" ng-submit="submit_form()">
+		<table>
+		<tr>
+				<td></td>
+				<td>Employee No : 12345</td>
+				<td>Employee Name: Lorem Ipsum</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>From:</td>
+				<td><input type="date" id="fromDate" name="input"
+					ng-model="formData.fromDate" class="calenderField" /></td>
+				<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To:</td>
+				<td><input type="date" id="toDate" name="input"
+					ng-model="formData.toDate" class="calenderField" /></td>
+			</tr>
+
+			<tr>
+				<td>Leave type :</td>
+				<td><select class="userFormInput">
+						<option>General</option>
+						<option>Sickness</option>
+						<option>Others</option>
+				</select></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Reason :</td>
+				<td><textarea class="userFormInput"></textarea></td>
+				<td></td>
+				<td></td>
+			</tr>
+
+			<tr>
+				<td></td>
+				<td><input type = "checkbox">Yes, Substitute has been arranged</td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+
+		<div style="margin-left:80px">
+			<div class="sameLine"><input type="submit" value="Apply" class="buttonType"></div>
+			<div class="sameLine"><input type="submit" value="Cancel" class="buttonType"></div>
+		</div>
+		<div class="muted" style="margin-top: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;CL Balance: 7 | CL Allowance: 3</div>
+
+		</tr>
+
+
+
+
+	</form>
+</div>

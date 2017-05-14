@@ -1,30 +1,38 @@
 [{
   "title": "Profile Settings",
   "url": "getProfileSettings"
- },{
-  "title": "Users",
-  "url": "users"
- },{
-  "title": "Roles",
-  "url": "roles"
- },{
-  "title": "One Way Binding",
-  "url": "oneWay"
- },{
-  "title": "Two Way Binding",
-  "url": "twoWay"
- },{
-  "title": "Filter",
-  "url": "testFilters"
- },{
-  "title": "FilterOnCtrl",
-  "url": "testFilterOnCtrl"
- },{
-  "title": "CheckBoxTest",
-  "url": "gridTestPage"
+ },
+ {
+  "title": "Apply for leave",
+  "url": "applyLeave"
+ },
+ {
+  "title": "Request Field Trip",
+  "url": "applyLeave"
+ },
+ {
+  "title": "Plan a Event",
+  "url": "applyLeave"
+ },
+ {
+  "title": "Request Resource Purchase",
+  "url": "applyLeave"
+ },
+ {
+  "title": "Capital Expenditure",
+  "url": "applyLeave"
+ },
+ {
+  "title": "Request PD",
+  "url": "applyLeave"
+ },
+ {
+  "title": "Request Payment/Fees",
+  "url": "applyLeave"
+ },
+ {
+  "title": "Recruitment Request",
+  "url": "applyLeave"
  }
- ,{
-  "title": "VersionPage",
-  "url": "versionPage"
- }
+ 
 ]

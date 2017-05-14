@@ -27,7 +27,7 @@ import javax.persistence.UniqueConstraint;
  */
 @Entity
 @Table(name="userprofile"
-    ,catalog="leave_app"
+    ,catalog="ems"
     , uniqueConstraints = @UniqueConstraint(columnNames="usercode") 
 )
 

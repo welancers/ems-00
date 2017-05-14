@@ -21,7 +21,7 @@ import javax.persistence.TemporalType;
  */
 @Entity
 @Table(name="leavetype"
-    ,catalog="leave_app"
+    ,catalog="ems"
 )
 
 public class Leavetype

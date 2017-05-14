@@ -3,15 +3,41 @@
     <table ng-repeat="emp in employees">   
             <tr> 
                 <td>First Name</td>
-                <td><input type="text" value ={{emp.firstName}} class="userFormInput"></td>
-            </tr>
-            <tr> 
+                <td><input type="text" value ={{emp.firstName}} class="userFormInput1"></td>
                 <td>Last Name</td>
-                <td><input type="text" value ={{emp.lastName}} class="userFormInput"></td>
+                <td><input type="text" value ={{emp.lastName}} class="userFormInput1"></td>
             </tr>
+            
             <tr> 
                 <td>Land line No</td>
-                <td><input type="text" value ={{emp.landlineNum}} class="userFormInput"></td>
-            </tr>         
-     </table>    
+                <td><input type="text" value ={{emp.landlineNum}} class="userFormInput1"></td>
+                <td>Mobile No</td>
+                <td><input type="text" value ={{emp.MobileNum}} class="userFormInput1"></td>
+            </tr>  
+            <tr> 
+                
+            </tr>
+            <tr> 
+                <td>Email(official)</td>
+                <td><input type="text" value ={{emp.personalEmail}} class="userFormInput"></td>
+                <td></td>
+                <td></td>
+            </tr> 
+            <tr> 
+                <td>Email(personal)</td>
+                <td><input type="text" value ={{emp.officeEmail}} class="userFormInput"></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr> 
+                <td>Staff Type: </td>
+                <td><input type="text" value ="Permanent" class="userFormInput1" disabled></td>
+                <td>Category: </td>
+                <td><input type="text" value ="Job Level 1" class="userFormInput1" disabled></td>
+            </tr>       
+     </table>   
+     <div style="margin-left:80px">
+			<div class="sameLine"><input type="submit" value="Update" class="buttonType"></div>
+			<div class="sameLine"><input type="submit" value="Cancel" class="buttonType"></div>
+		</div> 
 </div>

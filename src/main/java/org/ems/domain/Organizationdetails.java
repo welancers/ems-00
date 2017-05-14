@@ -19,7 +19,7 @@ import javax.persistence.TemporalType;
  */
 @Entity
 @Table(name="organizationdetails"
-    ,catalog="leave_app"
+    ,catalog="ems"
 )
 
 public class Organizationdetails

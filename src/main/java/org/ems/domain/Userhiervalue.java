@@ -26,7 +26,7 @@ import javax.persistence.TemporalType;
  */
 @Entity
 @Table(name="userhiervalue"
-    ,catalog="leave_app"
+    ,catalog="ems"
 )
 
 public class Userhiervalue

@@ -25,7 +25,7 @@ import javax.persistence.TemporalType;
  */
 @Entity
 @Table(name="groupmaster"
-    ,catalog="leave_app"
+    ,catalog="ems"
 )
 
 public class Groupmaster
