@@ -10,5 +10,17 @@
         <property name="hibernate.connection.password">root</property>
 		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
 		<property name="hibernate.show_sql">true</property>
+		<mapping class="org.ems.domain.Groupaccess" />
+		<mapping class="org.ems.domain.Groupmaster" />
+		<mapping class="org.ems.domain.Leavetype" />
+		<mapping class="org.ems.domain.Organization" />
+		<mapping class="org.ems.domain.Organizationdetails" />
+		<mapping class="org.ems.domain.Screen" />
+		<mapping class="org.ems.domain.Usergroup" />
+		<mapping class="org.ems.domain.Userhierlevel" />
+		<mapping class="org.ems.domain.Userhiervalue" />
+		<mapping class="org.ems.domain.Userprofile" />
+		<mapping class="org.ems.domain.Workapprovaldetails" />
+		<mapping class="org.ems.domain.Workbasketdetails" />			
 		</session-factory>
 </hibernate-configuration>

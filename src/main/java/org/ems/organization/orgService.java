@@ -4,15 +4,20 @@ import org.ems.domain.Organization;
 import org.ems.util.HibernateUtil;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
-import org.springframework.web.servlet.support.RequestContext;
+import org.springframework.stereotype.Component;
 
-public class orgService {
+@Component("orgService")
+public class orgService extends IorgService{
+	@Override
 	public void add(Organization org) {
 		Session session = HibernateUtil.getSessionFactory().openSession();
-		Transaction t =session.beginTransaction();
-		
-		session.save(org);
-		
-		}
+		Transaction t = session.beginTransaction();
 
+		session.save(org);
+		t.commit();
+		System.out.println("success");
+
+		session.close();
+
+	}
 }

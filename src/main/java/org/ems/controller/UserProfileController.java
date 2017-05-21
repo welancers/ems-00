@@ -8,9 +8,11 @@ import javax.servlet.http.HttpServletRequest;
 
 import org.ems.beans.User;
 import org.ems.domain.Organization;
+import org.ems.organization.IorgService;
 import org.ems.util.HibernateUtil;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,6 +23,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 @RequestMapping(value="/userProfile")
 public class UserProfileController {
+	private static final long serialVersionUID = 1L;
+	@Autowired
+	IorgService orgService;
 	
 	@RequestMapping(value="/getDetails", method=RequestMethod.GET, produces = "application/json")
 	@ResponseBody
@@ -35,6 +40,11 @@ public class UserProfileController {
 		employee.setPersonalEmail("personalmail@domain.com");
 		employee.setOtherContactNum("99876512340");
 		employee.setResidentialAddr("T.Nagar,Chennai");
+		Organization org = new Organization();
+		
+		org.setOrganizationid("akshar");
+		org.setOrganizationname("Test Name");
+		orgService.add(org);
 		
 		ArrayList empList = new ArrayList();
 		empList.add(employee);
@@ -46,21 +56,15 @@ public class UserProfileController {
 	@ResponseBody
 	public String applyForLeave(@RequestBody Organization org) {
 		System.out.println("into");
-		add(org);
+
+		org.setOrganizationid("akshar");
+		org.setOrganizationname("Test Name");
+		orgService.add(org);
+		orgService.add(org);
 		System.out.println(org.getOrganizationid());
 		System.out.println(org.getOrganizationname());
 		return "testString";
 	}
 	
-	public void add(Organization org) {
-		Session session = HibernateUtil.getSessionFactory().openSession();
-		Transaction t =session.beginTransaction();
-		
-		session.save(org);
-		t.commit();
-		System.out.println("success");
-		
-		session.close();
-		
-		}
+
 }

@@ -5,11 +5,11 @@ var app = angular.module('app', ['ngRoute','ngResource']);
 app.config(function($routeProvider){
     $routeProvider       
         .when('/userProfileSettings',{
-            templateUrl: '/views/userprofile.html',
+            templateUrl: '/views/userProfile.html',
             controller: 'usersProfileController'
         })
         .when('/getProfileSettings',{
-            templateUrl: '/views/userprofile.html',
+            templateUrl: '/views/userProfile.html',
             controller: 'testProfileController'
         })
         .when('/applyLeave',{
