@@ -1,10 +1,14 @@
 package org.ems.controller;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 import org.ems.beans.User;
 import org.ems.domain.Organization;
@@ -33,7 +37,7 @@ public class UserProfileController {
 		employee.setMobileNum("9876543210");
 		employee.setOfficeEmail("officialmail@domain.com");
 		employee.setPersonalEmail("personalmail@domain.com");
-		employee.setOtherContactNum("99876512340");
+		employee.setOtherContactNum("99876512340"); 
 		employee.setResidentialAddr("T.Nagar,Chennai");
 		
 		ArrayList empList = new ArrayList();
@@ -44,7 +48,8 @@ public class UserProfileController {
 	}
 	@RequestMapping(value="/applyLeave", method=RequestMethod.POST)
 	@ResponseBody
-	public String applyForLeave(@RequestBody Organization org) {
+	public String applyForLeave() {
+		Organization org=new Organization();
 		System.out.println("into");
 		add(org);
 		System.out.println(org.getOrganizationid());
@@ -63,4 +68,14 @@ public class UserProfileController {
 		session.close();
 		
 		}
+	
+
+	@RequestMapping(value="/login", method=RequestMethod.GET)
+	public void testrun(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException{
+		System.out.println("called from js");
+		RequestDispatcher rd = request.getRequestDispatcher("/ems/home");
+		rd.forward(request, response);
+		//return "test";
+		
+	}
 }

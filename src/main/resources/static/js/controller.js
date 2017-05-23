@@ -6,16 +6,26 @@ app.controller('menuController', ['$scope', '$http', '$log',
 	
 }]);
 
-app.controller('usersProfileController', ['$scope', '$http', '$log',
-    function($scope, $http, $log) {
-$http.get("../json/userProfileDetails.json").success(function(response) {
-$scope.employees = response.empList;
-$log.log("Employees --> ", $scope.employees);
-});
 
+app.controller('LoginRedirectController', ['$scope', '$http', '$log',
+    function($scope, $http, $log) {
+	$scope.loginSubmit = function(){
+		$http({
+	        url: "/userProfile/login",
+	        method: "GET",
+	        headers: {'Content-Type': 'application/json'},
+	        data: $scope.userProfile
+	    }).success(function(data, status, headers, config) {
+	        $scope.status = status;
+	        console.log(status)
+	    }).error(function(data, status, headers, config) {
+	        $scope.status = status;
+	    });
+	}
+	
 }]);
 
-app.controller('testProfileController', ['$scope', '$http', '$log',
+app.controller('usersProfileController', ['$scope', '$http', '$log',
     function($scope, $http, $log) {
          $http.get('/userProfile/getDetails').success(function(response){
              $scope.employees = response;
@@ -42,6 +52,7 @@ app.controller('leaveApplyController', ['$scope', '$http', '$log',
 	    });
 	}
 	
+
 	
 	
 }]);

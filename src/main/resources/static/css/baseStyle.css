@@ -61,6 +61,7 @@ span.pubholidaysquare {
 	background-color: #4CAF50;
 	display: block;
 }
+
 span.schholidaysquare {
 	height: 15px;
 	background-color: #4CAFD1;
@@ -71,7 +72,7 @@ div.fluidfloat {
 	margin-left: 170px;
 	padding: 1em;
 	overflow: hidden;
-	margin-bottom:15%;
+	margin-bottom: 15%;
 }
 
 h1 {
@@ -98,36 +99,61 @@ img.logo {
 }
 
 .userFormInput {
-    width: 146%;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding:6px;
+	width: 146%;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	padding: 6px;
 }
+
 .userFormInput1 {
-    width: 105%;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding:6px;
+	width: 105%;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	padding: 6px;
 }
 
-.calenderField{
+.calenderField {
 	width: 100%;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding:6px;
-    display:inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	padding: 6px;
+	display: inline-block;
 }
 
-.buttonType{
-	width:90%;
-	
-}
-.muted{
-	background-color:#F2F2F2
+.buttonType {
+	width: 90%;
 }
 
-.sameLine{
+.muted {
+	background-color: #F2F2F2
+}
+
+.sameLine {
 	display: inline-block;
 	width: 100px;
 }
 
+.center {
+	margin: auto;
+	width: 35%;
+	border: 3px solid #f2a560;
+	padding: 20px;
+	margin-bottom: 35px;
+}
+
+.form-group-custom {
+	margin: 20px;
+	text-align: center;
+}
+
+.loginHeader {
+	margin: auto;
+	margin-top: 20px;
+	width: 35%;
+	text-align: center;
+	background-color: #f2a560;
+	margin-top: 35px;
+	padding: 15px;
+	font-size:20px;
+	color:white;
+}

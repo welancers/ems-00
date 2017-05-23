@@ -12,13 +12,13 @@ public class MainController {
 	public String homepage() {
 		return "index";
 	}
-	
-	@RequestMapping(value="/testRuna", method=RequestMethod.GET)
-	public String testrun() {
-		System.out.println("called from js");
-		return "test";
-		
+	@RequestMapping(value="/login", method=RequestMethod.GET)
+	public String loginpage() {
+		return "login";
 	}
+	
+	
+	
 	
 	
 }
