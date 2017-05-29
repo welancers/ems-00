@@ -7,8 +7,8 @@
   "url": "applyLeave"
  },
  {
-  "title": "Request Field Trip",
-  "url": "/"
+  "title": "Approvals",
+  "url": "approve"
  },
  {
   "title": "Plan a Event",
@@ -33,11 +33,6 @@
  {
   "title": "Recruitment Request",
   "url": "/"
- },
- {
-  "title": "Logout",
-  "url": "/ems/logout"
- } 
- 
+ }
  
 ]

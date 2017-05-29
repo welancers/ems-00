@@ -10,15 +10,15 @@
 			<tr>
 				<td>From:</td>
 				<td><input type="date" id="fromDate" name="input"
-					ng-model="formData.fromDate" class="calenderField" /></td>
+					ng-model="leaveData.fromDate" class="calenderField" /></td>
 				<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To:</td>
 				<td><input type="date" id="toDate" name="input"
-					ng-model="formData.toDate" class="calenderField" /></td>
+					ng-model="leaveData.toDate" class="calenderField" /></td>
 			</tr>
 
 			<tr>
 				<td>Leave type :</td>
-				<td><select class="userFormInput">
+				<td><select class="userFormInput" ng-model="leaveData.leaveType">
 						<option>General</option>
 						<option>Sickness</option>
 						<option>Others</option>
@@ -42,7 +42,7 @@
 		</table>
 
 		<div style="margin-left:80px">
-			<div class="sameLine"><input type="submit" value="Apply" class="buttonType"></div>
+			<div class="sameLine"><input type="submit" value="Apply" class="buttonType" ></div>
 			<div class="sameLine"><input type="submit" value="Cancel" class="buttonType"></div>
 		</div>
 		<div class="muted" style="margin-top: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;CL Balance: 7 | CL Allowance: 3</div>

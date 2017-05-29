@@ -57,15 +57,11 @@
 			</div>
 		</header>
 		
-		<div ng-controller="menuController">
+		<div ng-controller="adminMenuController">
 			<nav>
 				<ul class="menu-list" style="background-color: {{color">
 					<li ng-repeat="menu in menuList"><a href="#/{{menu.url}}">{{menu.title}}</a></li>
-					<!-- 
-	        <li><a href="#/users">Users</a></li>
-	        <li><a href="#/roles">Roles</a></li>
-	        <li><a href="#/oneWay">One way binding</a></li>
-	        <li><a href="#/twoWay">Two way binding</a></li> -->
+					
 				</ul>
 			</nav>
 		</div>

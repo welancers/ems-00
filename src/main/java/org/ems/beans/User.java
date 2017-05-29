@@ -12,6 +12,12 @@ private String officeEmail;
 private String residentialAddr;
 private String userType;
 
+public String getUserType() {
+	return userType;
+}
+public void setUserType(String userType) {
+	this.userType = userType;
+}
 public String getMobileNum() {
 	return MobileNum;
 }

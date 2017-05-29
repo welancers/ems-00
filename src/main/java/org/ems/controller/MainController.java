@@ -9,16 +9,26 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class MainController {
 	
 	@RequestMapping(value="/home", method=RequestMethod.GET)
-	public String homepage() {
+	public String HomePage() {
 		return "index";
 	}
-	
-	@RequestMapping(value="/testRuna", method=RequestMethod.GET)
-	public String testrun() {
-		System.out.println("called from js");
-		return "test";
-		
+	@RequestMapping(value="/adminhome", method=RequestMethod.GET)
+	public String AdminHomePage() {
+		return "adminindex";
 	}
+	
+	@RequestMapping(value="/login", method=RequestMethod.GET)
+	public String LoginPage() {
+		return "login";
+	}
+	
+	@RequestMapping(value="/logout", method=RequestMethod.GET)
+	public String LogOutPage() {
+		return "logout";
+	}
+	
+	
+	
 	
 	
 }

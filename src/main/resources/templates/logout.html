@@ -51,27 +51,25 @@
 </head>
 <body class="basecolor">
 	<div class="container">
-	<header>
+		<header>			
 			<div>
 				<h1>Employee Management System</h1>
 			</div>
 		</header>
-		
-		<div ng-controller="menuController">
-			<nav>
-				<ul class="menu-list" style="background-color: {{color">
-					<li ng-repeat="menu in menuList"><a href="#/{{menu.url}}">{{menu.title}}</a></li>
-					<!-- 
-	        <li><a href="#/users">Users</a></li>
-	        <li><a href="#/roles">Roles</a></li>
-	        <li><a href="#/oneWay">One way binding</a></li>
-	        <li><a href="#/twoWay">Two way binding</a></li> -->
-				</ul>
-			</nav>
+		<div class="loginHeader">Akshar-Arbol</div>
+		<div class="center">
+			<form class="form">
+				<div>
+					
+					You are successfully logged out. Please <a href = "/ems/login">click here</a> to login
+					
+
+					
+
+				</div>
+			</form>
 		</div>
-		<div class="fluidfloat">
-		<div data-ng-view="ng-view" class="section"></div>
-		</div>
+
 		<footer>Copyright &copy; Akshar-Arbol International School</footer>
 	</div>
 </body>
